@@ -35,7 +35,7 @@ function setLanguage(language) {
     const value = current[element.dataset.i18n];
     if (value) element.textContent = value;
   });
-  document.title = `${current.title} — AI Academy`;
+  document.title = `${current.title} — AI for Research Central Asia`;
   localStorage.setItem("ai-academy-language", language);
 }
 
