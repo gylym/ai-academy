@@ -8,3 +8,4 @@
 #direction-filter option{background:#fff;color:#101614}
 .advanced-link{min-height:48px;padding:0 16px;border-radius:13px;background:#08745c;color:#fff;display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-size:10px;font-weight:800;letter-spacing:.03em;transition:.2s}.advanced-link span{color:#7ae5c6;font-size:17px}.advanced-link b{font-size:16px;margin-left:3px}.advanced-link:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(8,116,92,.2)}
 @media(max-width:850px){.advanced-link{width:100%;justify-content:center}}
+.search-band.simplified{grid-template-columns:1fr}.search-band.simplified .search-box{max-width:none}.stage-item[data-direction] span{font-weight:800;color:var(--green-dark)}
