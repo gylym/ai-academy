@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Күрделі зерттеу промпттары | Орталық Азия Академиялық AI ассистенті</title>
+  <title>Күрделі зерттеу промпттары | Академиялық AI ассистент</title>
   <meta name="description" content="Көпсатылы зерттеу, Scopus іздеуі, мақала талдауы және дәйексөз тексеруіне арналған күрделі академиялық промпттар.">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="complex-research-prompts.css?v=20260823-home-style">
+  <link rel="stylesheet" href="complex-research-prompts.css?v=20260823-research-suite">
 </head>
 <body>
   <header class="topbar">
-    <a class="brand" href="index.html" aria-label="Басты бетке оралу"><span class="brand-mark">AI</span><span>ОРТАЛЫҚ АЗИЯ<br><b>АКАДЕМИЯЛЫҚ AI АССИСТЕНТІ</b></span></a>
+    <a class="brand" href="index.html" aria-label="Академиялық AI ассистент — басты бет"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Академиялық AI ассистент</span></a>
     <div class="header-tools"><a class="back" id="back-label" href="research-prompts.html">← ПРОМПТ КІТАПХАНАСЫНА ОРАЛУ</a><div class="language-switch" role="group" aria-label="Интерфейс тілі"><button type="button" data-lang="kk" class="active">ҚАЗ</button><button type="button" data-lang="ru">РУС</button><button type="button" data-lang="en">EN</button></div></div>
   </header>
 
@@ -37,14 +37,14 @@
         <form id="prompt-form" class="form-panel" novalidate>
           <div class="selected-template"><small id="selected-label">ТАҢДАЛҒАН ШАБЛОН</small><strong id="selected-title"></strong><p id="selected-description"></p></div>
           <label class="wide"><span id="topic-label">Зерттеу тақырыбы немесе негізгі міндет <b>*</b></span><textarea id="topic" rows="3" placeholder="Мысалы: докторанттардың генеративті AI құралдарын этикалық қолдануы" required></textarea><small class="error" id="topic-error">Тақырыпты енгізіңіз.</small></label>
-          <label class="wide"><span id="source-label">Бастапқы материал немесе дерек</span><textarea id="source" rows="3" placeholder="Файлдың атауы, мақалалар жинағы, дерек сипаттамасы немесе [ФАЙЛДЫ ТІРКЕҢІЗ]"></textarea></label>
+          <label class="wide"><span id="source-label">Бастапқы материал немесе дерек</span><textarea id="source" rows="4" placeholder="Мақала мәтінін, дерек сипаттамасын немесе бастапқы материалды осында енгізіңіз"></textarea><small class="error" id="source-error">Бастапқы материалды енгізіңіз.</small></label>
           <div class="form-row">
             <label><span id="language-label">Промпт және жауап тілі</span><select id="language"><option value="kk">Қазақ тілі</option><option value="ru">Русский язык</option><option value="en">English</option></select></label>
             <label><span id="level-label">Академиялық деңгей</span><select id="level"><option value="master">Магистратура</option><option value="phd" selected>PhD / Докторантура</option><option value="researcher">Ғылыми қызметкер</option><option value="teacher">Оқытушы</option></select></label>
           </div>
           <div class="form-row">
             <label><span id="mode-label">Жұмыс режимі</span><select id="mode"><option value="interactive" selected>Қадамдап, жауапты күту</option><option value="complete">Толық нәтижені бірден беру</option></select></label>
-            <label><span id="format-label">Нәтиже форматы</span><select id="format"><option value="academic">Құрылымдалған академиялық мәтін</option><option value="mixed">Кесте және түсіндірме</option><option value="protocol">Қадамдық хаттама</option><option value="table">Тек кесте</option></select></label>
+            <label><span id="format-label">Нәтиже форматы</span><select id="format"><option value="text">Мәтін</option><option value="academic">Құрылымдалған академиялық мәтін</option><option value="mixed">Кесте және түсіндірме</option><option value="protocol">Қадамдық хаттама</option><option value="table">Тек кесте</option></select></label>
           </div>
           <label class="wide"><span id="constraints-label">Қосымша талаптар</span><textarea id="constraints" rows="3" placeholder="Сөз саны, кезеңдер, мерзім, арнайы әдіс немесе тыйымдар"></textarea></label>
           <label class="check"><input id="central-asia" type="checkbox"><span id="ca-label">Орталық Азия контекстін ескеру</span></label>
@@ -67,7 +67,7 @@
       </div>
     </section>
   </main>
-  <footer><span id="footer-brand">Орталық Азия Академиялық AI ассистенті</span><span id="footer-text">Зерттеу өнімділігін AI көмегімен тиімді және этикалық арттырыңыз.</span></footer>
-  <script src="complex-research-prompts.js?v=20260823-contexts"></script>
+  <footer><span id="footer-brand">Академиялық AI ассистент</span><span id="footer-text">Зерттеу өнімділігін AI көмегімен тиімді және этикалық арттырыңыз.</span></footer>
+  <script src="complex-research-prompts.js?v=20260823-research-suite"></script>
 </body>
 </html>

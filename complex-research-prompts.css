@@ -111,7 +111,7 @@ footer{gap:15px;flex-direction:column}
 :root{--ink:#101614;--green:#10a37f;--mint:#eaf7f3;--cream:#fff;--paper:#fff;--line:#dfe7e3;--orange:#10a37f}
 body{background:#fff;font-family:"Noto Sans",system-ui,sans-serif}
 .topbar{height:78px;max-width:1280px;margin:auto;padding:0 30px;border:0;background:rgba(255,255,255,.92)}
-.brand{font-family:"Noto Sans",sans-serif}.brand-mark{border:0;border-radius:10px;background:var(--ink)}
+.brand{font-family:"Noto Sans",sans-serif;font-size:16px;font-weight:700;text-transform:none;letter-spacing:0}.brand-mark{border:0;border-radius:10px;background:var(--ink);position:relative}.brand-mark i{position:absolute;width:13px;height:4px;border:1.5px solid #fff;border-radius:8px;transform:rotate(60deg)}.brand-mark i:nth-child(2){transform:rotate(-60deg)}.brand-mark i:nth-child(3){transform:none}
 .language-switch{border-color:var(--line);border-radius:12px;overflow:hidden}.language-switch button{border-color:var(--line)}
 main{max-width:1280px;margin:auto;padding:0 30px 50px}
 .hero{min-height:470px;margin:0;border-radius:34px;padding:68px 70px;background:linear-gradient(135deg,#eefaf6,#f8fbfa 52%,#f0f5f3);color:var(--ink);grid-template-columns:auto minmax(0,780px) 1fr;align-items:center}
