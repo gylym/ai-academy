@@ -26,3 +26,7 @@ main{max-width:1280px;margin:auto;padding:0 30px 42px}.hero{min-height:620px;bor
 /* Mobile hardening */
 @media(max-width:640px){.classic-hero>*{min-width:0}.classic-hero .hero-copy,.classic-hero .hero-visual{width:100%;max-width:100%}.classic-cta{width:100%;min-width:0;max-width:100%}.site-header .language select{min-height:44px}}
 @media(max-width:360px){.hero{padding-inline:18px}.classic-cta{gap:12px;padding-inline:16px;font-size:12px}.classic-cta span:first-child{min-width:0;overflow-wrap:anywhere}.eyebrow{letter-spacing:.11em}h1{font-size:38px}}
+
+/* Compact, readable phone layout */
+@media(max-width:640px){html,body{max-width:100%;overflow-x:hidden}.site-header{padding-inline:14px}.site-header .brand{min-width:0}.site-header .brand>span:last-child{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.classic-hero .eyebrow{font-size:10px;line-height:1.4;text-align:left}.classic-hero h1{text-wrap:balance}.classic-hero .hero-copy>p{line-height:1.58}.classic-hero .hero-visual{margin-inline:0;transform:none}.classic-cta{min-height:58px}}
+@media(max-width:380px){.site-header{padding-inline:12px}.site-header .brand{gap:8px;font-size:11px;max-width:205px}.site-header .brand-mark{width:29px;height:29px;flex:0 0 29px}.site-header .language select{min-width:58px;padding-inline:8px 22px}.classic-hero{padding-top:42px}.classic-hero .hero-copy>p{font-size:15px}.classic-hero .hero-visual{height:278px}.visual-card{font-size:10px}}
