@@ -22,3 +22,7 @@ main{max-width:1280px;margin:auto;padding:0 30px 42px}.hero{min-height:620px;bor
 .classic-home{min-height:100svh}.classic-home main{padding-bottom:28px}.classic-hero{min-height:calc(100svh - 106px)}
 .classic-home .brand{max-width:470px;font-size:16px;line-height:1.15}.classic-cta{min-width:min(420px,100%);min-height:68px;justify-content:space-between;padding-inline:26px;border-radius:18px;font-weight:800;letter-spacing:.04em}.classic-cta span:last-child{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#7ae5c6;color:#0d1714;font-size:20px;transition:transform .25s}.classic-cta:hover span:last-child{transform:rotate(45deg)}
 @media(max-width:640px){.classic-home .brand{font-size:12px;max-width:250px}.classic-hero{min-height:calc(100svh - 86px)}.classic-cta{min-width:0}}
+
+/* Mobile hardening */
+@media(max-width:640px){.classic-hero>*{min-width:0}.classic-hero .hero-copy,.classic-hero .hero-visual{width:100%;max-width:100%}.classic-cta{width:100%;min-width:0;max-width:100%}.site-header .language select{min-height:44px}}
+@media(max-width:360px){.hero{padding-inline:18px}.classic-cta{gap:12px;padding-inline:16px;font-size:12px}.classic-cta span:first-child{min-width:0;overflow-wrap:anywhere}.eyebrow{letter-spacing:.11em}h1{font-size:38px}}
