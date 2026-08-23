@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Күрделі зерттеу промпттары | Орталық Азия Академиялық AI ассистенті</title>
   <meta name="description" content="Көпсатылы зерттеу, Scopus іздеуі, мақала талдауы және дәйексөз тексеруіне арналған күрделі академиялық промпттар.">
-  <link rel="stylesheet" href="complex-research-prompts.css?v=20260823-i18n">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="complex-research-prompts.css?v=20260823-home-style">
 </head>
 <body>
   <header class="topbar">
@@ -46,6 +48,10 @@
           </div>
           <label class="wide"><span id="constraints-label">Қосымша талаптар</span><textarea id="constraints" rows="3" placeholder="Сөз саны, кезеңдер, мерзім, арнайы әдіс немесе тыйымдар"></textarea></label>
           <label class="check"><input id="central-asia" type="checkbox"><span id="ca-label">Орталық Азия контекстін ескеру</span></label>
+          <label class="check"><input id="kazakhstan" type="checkbox"><span id="kz-context-label">Қазақстан контекстін ескеру</span></label>
+          <label class="check"><input id="turkic" type="checkbox"><span id="turkic-label">Түркі әлемі контекстін ескеру</span></label>
+          <label class="check"><input id="cis" type="checkbox"><span id="cis-label">ТМД контекстін ескеру</span></label>
+          <label class="check"><input id="post-soviet" type="checkbox"><span id="post-soviet-label">Посткеңестік елдер контекстін ескеру</span></label>
           <label class="check"><input id="verified" type="checkbox" checked><span id="verified-label">Тек тексерілетін дереккөздерді сұрау</span></label>
           <div class="form-actions"><button class="generate" type="submit"><span id="generate-label">ПРОМПТТЫ ҚҰРАСТЫРУ</span><span>↗</span></button><button id="reset" class="reset" type="button">ТАЗАЛАУ</button></div>
         </form>
@@ -62,6 +68,6 @@
     </section>
   </main>
   <footer><span id="footer-brand">Орталық Азия Академиялық AI ассистенті</span><span id="footer-text">Зерттеу өнімділігін AI көмегімен тиімді және этикалық арттырыңыз.</span></footer>
-  <script src="complex-research-prompts.js?v=20260823-i18n"></script>
+  <script src="complex-research-prompts.js?v=20260823-contexts"></script>
 </body>
 </html>
