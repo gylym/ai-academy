@@ -1,55 +1,35 @@
 <!doctype html>
 <html lang="kk">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Докторанттар мен оқытушыларға арналған академиялық промпт конструкторы.">
-  <meta property="og:title" content="Орталық Азия Академиялық AI ассистенті">
-  <meta property="og:description" content="Зерттеу, оқыту және академиялық жұмысқа арналған сапалы промптты бірнеше қадамда құрастырыңыз.">
-  <meta property="og:image" content="og-v5.png">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Докторанттар мен оқытушыларға арналған академиялық AI көмекшісі және промпт конструкторы.">
+  <meta property="og:title" content="Орталық Азия Академиялық AI ассистенті"><meta property="og:image" content="og-v5.png">
   <title>Орталық Азия Академиялық AI ассистенті</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="academy-v4.css?v=20260823-assistant">
-  <script src="academy-v4.js?v=20260823-assistant" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="academy-v4.css?v=20260823-classic"><script src="academy-v4.js?v=20260823-classic" defer></script>
 </head>
-<body class="assistant-home">
+<body class="classic-home">
   <a class="skip-link" href="#main" data-i18n="skip">Мазмұнға өту</a>
-  <header class="site-header home-header">
-    <a class="brand" href="index.html" aria-label="Орталық Азия Академиялық AI ассистенті — басты бет">
-      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
-      <span data-i18n="brandName">Орталық Азия Академиялық AI ассистенті</span>
-    </a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Орталық Азия Академиялық AI ассистенті — басты бет"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span data-i18n="brandName">Орталық Азия Академиялық AI ассистенті</span></a>
     <label class="language"><span class="sr-only">Language</span><select id="language-select" aria-label="Language"><option value="kk">ҚАЗ</option><option value="ru">РУС</option><option value="en">EN</option></select></label>
   </header>
-
-  <main id="main" class="home-main">
-    <section class="assistant-hero" aria-labelledby="hero-title">
+  <main id="main">
+    <section class="hero classic-hero" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <div class="eyebrow"><span></span><b data-i18n="eyebrow">Академиялық жұмыстың жаңа тәсілі</b></div>
+        <div class="eyebrow"><span></span><b data-i18n="eyebrow">Жоғары білім және ғылымға арналған</b></div>
         <h1 id="hero-title" data-i18n="heroTitle">Докторанттар мен оқытушыларға арналған AI көмекшісі.</h1>
-        <p data-i18n="heroText">Зерттеу өнімділігін арттырыңыз: AI-ды тиімді, жауапты және этикалық қолдануға арналған нақты промпттарды бірнеше қадамда құрастырыңыз.</p>
-
-        <a class="prompt-portal" href="research-prompts.html" aria-describedby="portal-description">
-          <span class="portal-kicker" data-i18n="portalKicker">БІР МАҚСАТ · БІР ДӘЛ ПРОМПТ</span>
-          <span class="portal-title" data-i18n="heroCta">ПРОМПТ КОНСТРУКТОР</span>
-          <span class="portal-arrow" aria-hidden="true">↗</span>
-          <span class="portal-flow" id="portal-description">
-            <span><i>01</i><b data-i18n="portalStep1">Бағыт</b></span>
-            <span><i>02</i><b data-i18n="portalStep2">Контекст</b></span>
-            <span><i>03</i><b data-i18n="portalStep3">Нәтиже</b></span>
-          </span>
-        </a>
+        <p data-i18n="heroText">Зерттеу өнімділігін арттырыңыз: AI-ды тиімді, жауапты және этикалық қолдануға арналған нақты промпттарды құрастырыңыз.</p>
+        <a class="button primary classic-cta" href="research-prompts.html"><span data-i18n="heroCta">ПРОМПТ КОНСТРУКТОР</span><span aria-hidden="true">↗</span></a>
       </div>
-
-      <div class="academic-orbit" aria-hidden="true">
-        <div class="orbit-line orbit-line-a"></div>
-        <div class="orbit-line orbit-line-b"></div>
-        <div class="orbit-core"><span>AI</span><small>ACADEMIC</small></div>
-        <span class="orbit-tag tag-a">RESEARCH</span>
-        <span class="orbit-tag tag-b">TEACHING</span>
-        <span class="orbit-tag tag-c">ANALYSIS</span>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orb orb-a"></div><div class="orb orb-b"></div>
+        <div class="visual-card vc-one"><span>01</span><b>Research</b></div>
+        <div class="visual-card vc-two"><span>02</span><b>Teaching</b></div>
+        <div class="visual-card vc-three"><span>03</span><b>Data</b></div>
+        <div class="visual-card vc-four"><span>04</span><b>Writing</b></div>
+        <div class="visual-core"><span class="spark">✦</span><strong>AI</strong></div>
       </div>
     </section>
   </main>
