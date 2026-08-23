@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Күрделі зерттеу промпттары | Орталық Азия Академиялық AI ассистенті</title>
+  <meta name="description" content="Көпсатылы зерттеу, Scopus іздеуі, мақала талдауы және дәйексөз тексеруіне арналған күрделі академиялық промпттар.">
+  <link rel="stylesheet" href="complex-research-prompts.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Басты бетке оралу"><span class="brand-mark">AI</span><span>ОРТАЛЫҚ АЗИЯ<br><b>АКАДЕМИЯЛЫҚ AI АССИСТЕНТІ</b></span></a>
+    <a class="back" href="research-prompts.html">← ПРОМПТ КІТАПХАНАСЫНА ОРАЛУ</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-number">02</div>
+      <div>
+        <p class="eyebrow">ADVANCED RESEARCH WORKSPACE</p>
+        <h1>Күрделі зерттеу промпттары</h1>
+        <p>Көп кезеңді академиялық міндетті таңдаңыз. Конструктор тақырып, дерек және жұмыс тәртібін бір дәл промптқа біріктіреді.</p>
+      </div>
+      <div class="hero-stat"><strong>8</strong><span>терең<br>шаблон</span></div>
+    </section>
+
+    <section class="library" aria-labelledby="templates-title">
+      <div class="section-heading"><span>01</span><div><p>ШАБЛОНДЫ ТАҢДАҢЫЗ</p><h2 id="templates-title">Зерттеу міндеттері</h2></div></div>
+      <div id="template-grid" class="template-grid"></div>
+    </section>
+
+    <section class="builder" id="builder" aria-labelledby="builder-title">
+      <div class="section-heading"><span>02</span><div><p>ЖЕКЕЛЕНДІРУ</p><h2 id="builder-title">Промптты құрастыру</h2></div></div>
+      <div class="builder-grid">
+        <form id="prompt-form" class="form-panel" novalidate>
+          <div class="selected-template"><small>ТАҢДАЛҒАН ШАБЛОН</small><strong id="selected-title"></strong><p id="selected-description"></p></div>
+          <label class="wide"><span>Зерттеу тақырыбы немесе негізгі міндет <b>*</b></span><textarea id="topic" rows="3" placeholder="Мысалы: докторанттардың генеративті AI құралдарын этикалық қолдануы" required></textarea><small class="error" id="topic-error">Тақырыпты енгізіңіз.</small></label>
+          <label class="wide"><span>Бастапқы материал немесе дерек</span><textarea id="source" rows="3" placeholder="Файлдың атауы, мақалалар жинағы, дерек сипаттамасы немесе [ФАЙЛДЫ ТІРКЕҢІЗ]"></textarea></label>
+          <div class="form-row">
+            <label><span>Жауап тілі</span><select id="language"><option>Қазақ тілі</option><option>Русский язык</option><option selected>English</option></select></label>
+            <label><span>Академиялық деңгей</span><select id="level"><option>Магистратура</option><option selected>PhD / Докторантура</option><option>Ғылыми қызметкер</option><option>Оқытушы</option></select></label>
+          </div>
+          <div class="form-row">
+            <label><span>Жұмыс режимі</span><select id="mode"><option value="interactive" selected>Қадамдап, жауапты күту</option><option value="complete">Толық нәтижені бірден беру</option></select></label>
+            <label><span>Нәтиже форматы</span><select id="format"><option>Құрылымдалған академиялық мәтін</option><option>Кесте және түсіндірме</option><option>Қадамдық хаттама</option><option>Тек кесте</option></select></label>
+          </div>
+          <label class="wide"><span>Қосымша талаптар</span><textarea id="constraints" rows="3" placeholder="Сөз саны, кезеңдер, мерзім, арнайы әдіс немесе тыйымдар"></textarea></label>
+          <label class="check"><input id="central-asia" type="checkbox"><span>Орталық Азия контекстін ескеру</span></label>
+          <label class="check"><input id="verified" type="checkbox" checked><span>Тек тексерілетін дереккөздерді сұрау</span></label>
+          <div class="form-actions"><button class="generate" type="submit">ПРОМПТТЫ ҚҰРАСТЫРУ <span>↗</span></button><button id="reset" class="reset" type="button">ТАЗАЛАУ</button></div>
+        </form>
+
+        <aside class="result-panel" aria-labelledby="result-title">
+          <div class="result-head"><div><small>ДАЙЫН ПРОМПТ</small><h2 id="result-title">Көшіруге дайын нәтиже</h2></div><span id="word-count">0 сөз</span></div>
+          <div id="empty-result" class="empty-result"><span>⌁</span><p>Шаблонды жекелендіріп,<br>«Промптты құрастыру» батырмасын басыңыз.</p></div>
+          <pre id="prompt-output" class="prompt-output hidden" tabindex="0"></pre>
+          <div class="integrity"><b>Академиялық адалдық</b><p>AI жауабын тексеріңіз. Құпия дерек енгізбеңіз. Авторды, DOI-ды және статистиканы ойдан шығаруға жол бермеңіз.</p></div>
+          <button id="copy" class="copy" type="button" disabled>⧉ ПРОМПТТЫ КӨШІРУ</button>
+          <p id="status" class="status" aria-live="polite"></p>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer><span>Орталық Азия Академиялық AI ассистенті</span><span>Зерттеу өнімділігін AI көмегімен тиімді және этикалық арттырыңыз.</span></footer>
+  <script src="complex-research-prompts.js"></script>
+</body>
+</html>
